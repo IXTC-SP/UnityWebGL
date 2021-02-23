@@ -28,7 +28,7 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
         UnityLoader.SystemInfo.mobile = false;  // Workaround to force `UnityLoader` to actually load on mobile.
-        window.gameInstance = UnityLoader.instantiate('gameContainer', 'Build/250221_mobile_git.json', {
+        window.gameInstance = UnityLoader.instantiate('gameContainer', 'Build/250221_canvas.json', {
           Module: {
             // `preserveDrawingBuffer` is needed for WebVR content to be mirrored to the `<canvas>`.
             webglContextAttributes: {
@@ -62,7 +62,7 @@
       <div id="gameContainer"></div>
     </div>
 
-    <!--div id="instruction">
+    <div id="instruction">
       <div id="novr" class="panel center">
         <h3>You&rsquo;ll need a <a href="https://developer.mozilla.com/topics/mixed-reality/">WebXR-enabled browser</a> and VR headset to fully enjoy this experience.</h3>
         <p><img src="mousedrag.png" width="70" alt="Click-and-drag your mouse"></p>
@@ -71,9 +71,9 @@
           <button class="confirm">Continue</button>
         </p>
       </div>
-    </div-->
+    </div>
 
-    <!--button id="enterxr" value="Enter VR"></button-->
+    <button id="enterxr" value="Enter VR"></button>
 
     <div id="performance" data-enabled="false"></div>
 
