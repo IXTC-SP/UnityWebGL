@@ -12,7 +12,7 @@
   }
 
   function XRManager() {
-    this.enterXRButton = document.getElementById('enterxr');
+    //this.enterXRButton = document.getElementById('enterxr');
     this.gameContainer = document.getElementById('game');
     this.perfStatus = document.getElementById('performance');
 
@@ -48,7 +48,7 @@
 
     navigator.xr.isSessionSupported('immersive-vr').then((supported) => {
       this.isVRSupported = supported;
-      this.enterXRButton.dataset.enabled = supported;
+      //this.enterXRButton.dataset.enabled = supported;
     });
   }
 
@@ -74,7 +74,7 @@
     document.addEventListener('UnityLoaded', onUnityLoaded, false);
     document.addEventListener('Unity', onUnityMessage, false);
 
-    this.enterXRButton.addEventListener('click', onToggleVR, false);
+    //this.enterXRButton.addEventListener('click', onToggleVR, false);
   }
 
   XRManager.prototype.requestPresent = function () {
@@ -180,7 +180,7 @@
 
     this.setGameInstance(gameInstance);
     
-    this.enterXRButton.disabled = !this.isVRSupported;
+    //this.enterXRButton.disabled = !this.isVRSupported;
 
     this.gameInstance.SendMessage(
       this.unityObjectName, 'OnXRCapabilities',
