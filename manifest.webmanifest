@@ -8,18 +8,7 @@
   "display": "standalone",
   "background_color": "#111",
   "theme_color": "#111",
-  "icons": [
-    {
-      "src": "vr.png",
-      "sizes": "200x200",
-      "type": "image/png"
-    },
-    {
-      "src": "favicon.ico",
-      "sizes": "16x16 32x32 48x48 64x64 256x256",
-      "type": "image/x-icon"
-    }
-  ],
+ 
   "screenshots": [
     {
       "src": "https://raw.githubusercontent.com/mozilla/unity-webxr-export/master/img/preview.gif",
